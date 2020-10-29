@@ -4,11 +4,22 @@ We provide a highly configurable PyTorch dataset / dataloader to use the 3RScan 
 triplet networks. More information about the 3RScan dataset can be found here: https://github.com/WaldJohannaU/3RScan
 We also provide sample model implementations that use this dataset.
 
+From all rgb camera images of the scans in the 3RScan dataset, we select those image that are viable for training a triplet network based on filters:
+    - minimum size
+    - minimum visibility (occlusion+truncation of objects)
+    - class-filter (e.g. don't use images of walls)
+
+These images get then combined into triplets (anchor, positive, negative) based on different positive and negative criteria (easy, medium, hard).
+
+![Triplet Dataset Pipeline](images/triplet_database.JPG)
+
 ## Highlights
 
 - Configurable sampling of triplets
     - 4 positive categories
+    ![Positive Categories](images/sample_positive.jpg)
     - 5 negative categories
+    ![Negative Categories](images/sample_negative.jpg)
 
 - Minimum requirements for each sample (bounding-box size, visibility, etc.)
 
@@ -38,7 +49,7 @@ We also provide sample model implementations that use this dataset.
 
 - Download the 3RScan dataset (see: https://github.com/WaldJohannaU/3RScan)
 - Optionally split the dataset into train/val/test with our custom splits (see: splits/*.txt)
-- Render the 3RScan dataset with the Rio_Renderer (see: https://github.com/WaldJohannaU/3RScan/tree/master/c%2B%2B/rio_renderer)
+- Render the 3RScan dataset with the Rio_Renderer (see: https://github.com/WaldJohannaU/3RScan/tree/master/c%2B%2B/rio_renderer). Make sure to include the rendering of the visibility.txt files!
 - Run the FrameFilter component to generate the 2DInstances.txt file (see: util/FrameFilter)
 - Create a conda environment with the requirements listed in requirements.txt
 
