@@ -4,10 +4,10 @@ We provide a highly configurable PyTorch dataset / dataloader to use the 3RScan 
 triplet networks. More information about the 3RScan dataset can be found here: https://github.com/WaldJohannaU/3RScan
 We also provide sample model implementations that use this dataset.
 
-From all rgb camera images of the scans in the 3RScan dataset, we select those image that are viable for training a triplet network based on filters:
-    - minimum size
-    - minimum visibility (occlusion+truncation of objects)
-    - class-filter (e.g. don't use images of walls)
+From all rgb camera images of the scans in the 3RScan dataset, we select those images that are viable for training a triplet network based on filters:
+- minimum size
+- minimum visibility (occlusion+truncation of objects)
+- class-filter (e.g. don't use images of walls)
 
 These images get then combined into triplets (anchor, positive, negative) based on different positive and negative criteria (easy, medium, hard).
 
