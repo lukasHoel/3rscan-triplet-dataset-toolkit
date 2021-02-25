@@ -11,15 +11,15 @@ From all rgb camera images of the scans in the 3RScan dataset, we select those i
 
 These images get then combined into triplets (anchor, positive, negative) based on different positive and negative criteria (easy, medium, hard).
 
-![Triplet Dataset Pipeline](images/triplet_database.JPG)
+![Triplet Dataset Pipeline](images/triplet_database.png)
 
 ## Highlights
 
 - Configurable sampling of triplets
     - 4 positive categories
-    ![Positive Categories](images/sample_positive.jpg)
+    ![Positive Categories](images/sample_positive.png)
     - 5 negative categories
-    ![Negative Categories](images/sample_negative.jpg)
+    ![Negative Categories](images/sample_negative.png)
 
 - Minimum requirements for each sample (bounding-box size, visibility, etc.)
 
