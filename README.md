@@ -60,3 +60,17 @@ These images get then combined into triplets (anchor, positive, negative) based 
 ## How to evaluate a model
 
 - See the example Jupyter Notebook that uses the dataset components to test a sample model: notebooks/test.ipynb
+
+## License and Citation
+
+This framework is licensed under the MIT license. Please see `LICENSE.txt` for details.
+
+If you use it in your research, we would appreciate a citation via
+```bibtex
+@misc{3rscan-triplet-dataset-toolkit,
+    Author = {Lukas H\"ollein, Johanna Wald},
+    Year = {2020},
+    Note = {https://github.com/lukasHoel/3rscan-triplet-dataset-toolkit},
+    Title = {3RScan Triplet Dataset Toolkit}
+}
+```
