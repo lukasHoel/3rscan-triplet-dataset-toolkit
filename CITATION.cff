@@ -1,0 +1,19 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 3RScan Triplet Dataset Toolkit
+message: >-
+  If you use it in your research, we would appreciate
+  a citation via
+type: software
+authors:
+  - given-names: Lukas
+    family-names: Höllein
+    email: lukas.hoellein@tum.de
+    affiliation: Technical University of Munich
+    orcid: 'https://orcid.org/0000-0001-9494-0797'
+  - given-names: Johanna
+    family-names: Wald
+    email: johanna.wald@tum.de
+    affiliation: Technical University of Munich
